@@ -15,10 +15,7 @@ MAINTAINER Paul Bergene <pbergene@redhat.com>
 
 ADD root /
 
-RUN wget -P /usr/games/minecraft/ http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
-RUN java -jar /usr/games/minecraft/Minecraft.jar
-
-
+RUN wget -P /usr/games/minecraft/ https://s3.amazonaws.com/Minecraft.Download/versions/1.12.1/minecraft_server.1.12.1.jar 
 
 
 RUN chmod 777 /run.sh

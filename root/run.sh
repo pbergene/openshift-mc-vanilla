@@ -3,4 +3,4 @@ echo "----"
 id
 echo "----"
 
-while true; do echo "sleep 10"; sleep 10; done
+java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.1.jar nogui
