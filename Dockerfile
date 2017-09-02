@@ -17,6 +17,8 @@ RUN wget -P /usr/games/minecraft/ https://s3.amazonaws.com/Minecraft.Download/ve
 
 
 RUN chmod 777 /run.sh
+RUN chmod 777 /usr/games/minecraft/server.properties
+
 #RUN chmod -R 777 /usr/share/nginx/html/
 #RUN echo "nginx on CentOS7" > /usr/share/nginx/html/index.html
 #RUN chmod 777 /run /var/log/nginx 
