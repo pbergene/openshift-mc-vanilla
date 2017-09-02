@@ -15,7 +15,6 @@ MAINTAINER Paul Bergene <pbergene@redhat.com>
 
 ADD root /
 
-l
 RUN wget -P /usr/games/minecraft/ http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 RUN java -jar /usr/games/minecraft/Minecraft.jar
 
