@@ -11,11 +11,11 @@ MAINTAINER Paul Bergene <pbergene@redhat.com>
 #    yum clean all && \
 #    mkdir -p /usr/share/nginx/html
 
-RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk wget
+#RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk wget
 
 ADD root /
 
-#RUN wget -P /usr/games/minecraft/ https://s3.amazonaws.com/Minecraft.Download/versions/1.12.1/minecraft_server.1.12.1.jar 
+RUN wget -P /usr/games/minecraft/ https://s3.amazonaws.com/Minecraft.Download/versions/1.12.1/minecraft_server.1.12.1.jar 
 
 
 RUN chmod 777 /run.sh
