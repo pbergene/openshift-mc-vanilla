@@ -13,8 +13,13 @@ MAINTAINER Paul Bergene <pbergene@redhat.com>
 
 RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk wget
 
-RUN cd /usr/games/minecraft wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ADD root /
+
+RUN cd /usr/games/minecraft wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+RUN java -jar /usr/games/minecraft/Minecraft.jar
+
+
+
 
 RUN chmod 777 /run.sh
 #RUN chmod -R 777 /usr/share/nginx/html/
