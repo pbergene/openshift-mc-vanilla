@@ -1,7 +1,7 @@
 
 
-#FROM centos:centos7
-FROM openjdk:8
+FROM centos:centos7
+#FROM openjdk:8
 MAINTAINER Paul Bergene <pbergene@redhat.com> 
 
 #ADD yum-repo-nginx-testing.repo /etc/yum.repos.d/nginx-testing.repo
@@ -11,7 +11,7 @@ MAINTAINER Paul Bergene <pbergene@redhat.com>
 #    yum clean all && \
 #    mkdir -p /usr/share/nginx/html
 
-#RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk wget
+RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk
 
 ADD root /
 
