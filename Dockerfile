@@ -15,6 +15,9 @@ RUN chmod 777 /run.sh
 #RUN echo "nginx on CentOS7" > /usr/share/nginx/html/index.html
 #RUN chmod 777 /run /var/log/nginx 
 
+RUN chmod 777 /usr/games/minecraft/
+RUN chmod 777 /usr/games/minecraft/logs
+
 EXPOSE 25565 
 USER 997
 ENTRYPOINT ["/run.sh"]
