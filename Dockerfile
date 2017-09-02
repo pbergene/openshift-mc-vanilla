@@ -11,7 +11,7 @@ MAINTAINER Paul Bergene <pbergene@redhat.com>
 #    yum clean all && \
 #    mkdir -p /usr/share/nginx/html
 
-RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk wget
+#RUN yum -y install --setopt=tsflags=nodocs java-1.8.0-openjdk wget
 
 ADD root /
 
