@@ -12,7 +12,7 @@ ADD root /
 #RUN chmod 777 /usr/games/minecraft/logs/
 #RUN ls -l /usr/games/minecraft/logs/
 
-RUN wget -P /usr/games/minecraft/ https://s3.amazonaws.com/Minecraft.Download/versions/1.12.1/minecraft_server.1.12.1.jar 
+RUN wget -P /usr/games/minecraft/ https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar 
 
 RUN chmod 777 /run.sh
 RUN chmod 777 /usr/games/minecraft/*
